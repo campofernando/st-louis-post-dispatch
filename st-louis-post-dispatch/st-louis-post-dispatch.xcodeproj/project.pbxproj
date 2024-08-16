@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		EDAA00062C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */; };
 		EDAA00082C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */; };
+		EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */; };
+		EDAA00192C6F4F13001C2ED9 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00182C6F4F13001C2ED9 /* ApiTests.swift */; };
+		EDAA001B2C6F4F92001C2ED9 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA001A2C6F4F92001C2ED9 /* ApiHelper.swift */; };
+		EDAA001E2C6F5F79001C2ED9 /* PayloadMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */; };
+		EDAA00202C6F6245001C2ED9 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA001F2C6F6245001C2ED9 /* ApiService.swift */; };
+		EDAA00232C6F659B001C2ED9 /* payloadMock.json in Resources */ = {isa = PBXBuildFile; fileRef = EDAA00222C6F659B001C2ED9 /* payloadMock.json */; };
+		EDAA00252C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00242C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift */; };
+		EDAA00272C6F6896001C2ED9 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00262C6F6896001C2ED9 /* MockHttpClient.swift */; };
 		EDAAFFE22C6F461B001C2ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFFE12C6F461B001C2ED9 /* AppDelegate.swift */; };
 		EDAAFFE42C6F461B001C2ED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFFE32C6F461B001C2ED9 /* SceneDelegate.swift */; };
 		EDAAFFE62C6F461B001C2ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFFE52C6F461B001C2ED9 /* ViewController.swift */; };
@@ -40,6 +48,14 @@
 		EDAA00012C6F461E001C2ED9 /* st-louis-post-dispatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "st-louis-post-dispatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITests.swift; sourceTree = "<group>"; };
 		EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		EDAA00182C6F4F13001C2ED9 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
+		EDAA001A2C6F4F92001C2ED9 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadMessage.swift; sourceTree = "<group>"; };
+		EDAA001F2C6F6245001C2ED9 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		EDAA00222C6F659B001C2ED9 /* payloadMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payloadMock.json; sourceTree = "<group>"; };
+		EDAA00242C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PayloadMessage+Mocks.swift"; sourceTree = "<group>"; };
+		EDAA00262C6F6896001C2ED9 /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
 		EDAAFFDE2C6F461B001C2ED9 /* st-louis-post-dispatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "st-louis-post-dispatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAAFFE12C6F461B001C2ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDAAFFE32C6F461B001C2ED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +103,43 @@
 			path = "st-louis-post-dispatchUITests";
 			sourceTree = "<group>";
 		};
+		EDAA00142C6F4E78001C2ED9 /* rest */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */,
+				EDAA00262C6F6896001C2ED9 /* MockHttpClient.swift */,
+			);
+			path = rest;
+			sourceTree = "<group>";
+		};
+		EDAA00172C6F4EF2001C2ED9 /* rest */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA00182C6F4F13001C2ED9 /* ApiTests.swift */,
+			);
+			path = rest;
+			sourceTree = "<group>";
+		};
+		EDAA001C2C6F5F07001C2ED9 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA00212C6F6505001C2ED9 /* Mocks */,
+				EDAA001A2C6F4F92001C2ED9 /* ApiHelper.swift */,
+				EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */,
+				EDAA001F2C6F6245001C2ED9 /* ApiService.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		EDAA00212C6F6505001C2ED9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA00222C6F659B001C2ED9 /* payloadMock.json */,
+				EDAA00242C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		EDAAFFD52C6F461B001C2ED9 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +163,8 @@
 		EDAAFFE02C6F461B001C2ED9 /* st-louis-post-dispatch */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA001C2C6F5F07001C2ED9 /* api */,
+				EDAA00142C6F4E78001C2ED9 /* rest */,
 				EDAAFFE12C6F461B001C2ED9 /* AppDelegate.swift */,
 				EDAAFFE32C6F461B001C2ED9 /* SceneDelegate.swift */,
 				EDAAFFE52C6F461B001C2ED9 /* ViewController.swift */,
@@ -125,6 +180,7 @@
 		EDAAFFFA2C6F461E001C2ED9 /* st-louis-post-dispatchTests */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA00172C6F4EF2001C2ED9 /* rest */,
 				EDAAFFFB2C6F461E001C2ED9 /* st_louis_post_dispatchTests.swift */,
 			);
 			path = "st-louis-post-dispatchTests";
@@ -234,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAA00232C6F659B001C2ED9 /* payloadMock.json in Resources */,
 				EDAAFFF12C6F461E001C2ED9 /* LaunchScreen.storyboard in Resources */,
 				EDAAFFEE2C6F461E001C2ED9 /* Assets.xcassets in Resources */,
 				EDAAFFE92C6F461B001C2ED9 /* Main.storyboard in Resources */,
@@ -261,9 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAA00252C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift in Sources */,
+				EDAA00272C6F6896001C2ED9 /* MockHttpClient.swift in Sources */,
+				EDAA001E2C6F5F79001C2ED9 /* PayloadMessage.swift in Sources */,
+				EDAA001B2C6F4F92001C2ED9 /* ApiHelper.swift in Sources */,
+				EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */,
 				EDAAFFE62C6F461B001C2ED9 /* ViewController.swift in Sources */,
 				EDAAFFEC2C6F461B001C2ED9 /* st_louis_post_dispatch.xcdatamodeld in Sources */,
 				EDAAFFE22C6F461B001C2ED9 /* AppDelegate.swift in Sources */,
+				EDAA00202C6F6245001C2ED9 /* ApiService.swift in Sources */,
 				EDAAFFE42C6F461B001C2ED9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAA00192C6F4F13001C2ED9 /* ApiTests.swift in Sources */,
 				EDAAFFFC2C6F461E001C2ED9 /* st_louis_post_dispatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
