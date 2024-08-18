@@ -8,14 +8,14 @@
 import Foundation
 
 struct PayloadMessage: Codable {
-    let id: String
-    let record: Record
-    let metadata: Metadata
+    let id: String?
+    let record: RecordMessage?
+    let metadata: MetadataMessage?
 }
 
-struct Record: Codable {
-    let headerLogo: URL
-    let subscription: Subscription
+struct RecordMessage: Codable {
+    let headerLogo: URL?
+    let subscription: SubscriptionMessage?
     
     enum CodingKeys: String, CodingKey {
         case headerLogo = "header_logo"
@@ -23,14 +23,14 @@ struct Record: Codable {
     }
 }
 
-struct Subscription: Codable {
-    let offerPageStyle: String
-    let coverImage: URL
-    let subscribeTitle: String
-    let subscribeSubtitle: String
-    let offers: Offers
-    let benefits: [String]
-    let disclaimer: String
+struct SubscriptionMessage: Codable {
+    let offerPageStyle: String?
+    let coverImage: URL?
+    let subscribeTitle: String?
+    let subscribeSubtitle: String?
+    let offers: OffersMessage?
+    let benefits: [String]?
+    let disclaimer: String?
     
     enum CodingKeys: String, CodingKey {
         case offerPageStyle = "offer_page_style"
@@ -41,21 +41,21 @@ struct Subscription: Codable {
     }
 }
 
-struct Offers: Codable {
-    let id0: Offer
-    let id1: Offer
+struct OffersMessage: Codable {
+    let id0: OfferMessage?
+    let id1: OfferMessage?
 }
 
-struct Offer: Codable {
-    let price: Double
-    let description: String
+struct OfferMessage: Codable {
+    let price: Double?
+    let description: String?
 }
 
-struct Metadata: Codable {
-    let name: String
-    let readCountRemaining: Int
-    let timeToExpire: Int
-    let createdAt: String
+struct MetadataMessage: Codable {
+    let name: String?
+    let readCountRemaining: Int?
+    let timeToExpire: Int?
+    let createdAt: String?
     
     enum CodingKeys: String, CodingKey {
         case name, readCountRemaining, timeToExpire, createdAt

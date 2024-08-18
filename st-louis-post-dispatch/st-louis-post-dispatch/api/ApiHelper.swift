@@ -19,13 +19,14 @@ enum ApiHelper {
 
 struct PayloadMapper {
     struct InvalidResponseStatus: Error { }
+    struct InvalidPayloadMessage: Error { }
     
-    static func map(response: HttpClientResponse) throws -> PayloadMessage {
+    static func map(response: HttpClientResponse) throws -> Payload {
         if response.httpResponse.statusCode == 200 {
-            let payload = try JSONDecoder().decode(PayloadMessage.self, from: response.data)
-            return payload
+            let payloadMessage = try JSONDecoder().decode(PayloadMessage.self, from: response.data)
+            return try payloadMessage.getModel()
         }
         
-        throw(InvalidResponseStatus())
+        throw InvalidResponseStatus()
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED39369C2C7208AE00075510 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39369B2C7208AE00075510 /* PersistenceManager.swift */; };
+		ED39369F2C720A7300075510 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39369E2C720A7300075510 /* PersistenceTests.swift */; };
+		ED3936A22C720B8900075510 /* PayloadDTO+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936A12C720B8900075510 /* PayloadDTO+Mocks.swift */; };
+		ED3936A62C7211DD00075510 /* WhenFetchingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936A52C7211DD00075510 /* WhenFetchingPayload.swift */; };
 		EDAA00062C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */; };
 		EDAA00082C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */; };
 		EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */; };
@@ -17,6 +21,15 @@
 		EDAA00232C6F659B001C2ED9 /* payloadMock.json in Resources */ = {isa = PBXBuildFile; fileRef = EDAA00222C6F659B001C2ED9 /* payloadMock.json */; };
 		EDAA00252C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00242C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift */; };
 		EDAA00272C6F6896001C2ED9 /* MockHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00262C6F6896001C2ED9 /* MockHttpClient.swift */; };
+		EDAA002E2C7150D1001C2ED9 /* PayloadDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA002D2C7150D1001C2ED9 /* PayloadDTO.swift */; };
+		EDAA00332C71547F001C2ED9 /* PayloadRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00322C71547F001C2ED9 /* PayloadRepository.swift */; };
+		EDAA00362C715630001C2ED9 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00352C715630001C2ED9 /* Payload.swift */; };
+		EDAA003A2C71593E001C2ED9 /* Payload+Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00392C71593E001C2ED9 /* Payload+Persistence.swift */; };
+		EDAA003C2C715D3F001C2ED9 /* RecordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA003B2C715D3F001C2ED9 /* RecordDTO.swift */; };
+		EDAA003E2C715F71001C2ED9 /* SubscriptionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA003D2C715F71001C2ED9 /* SubscriptionDTO.swift */; };
+		EDAA00402C7161BF001C2ED9 /* OfferDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA003F2C7161BF001C2ED9 /* OfferDTO.swift */; };
+		EDAA00422C71632D001C2ED9 /* PersistenceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00412C71632D001C2ED9 /* PersistenceConstants.swift */; };
+		EDAA00442C7173BE001C2ED9 /* Payload+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00432C7173BE001C2ED9 /* Payload+API.swift */; };
 		EDAAFFE22C6F461B001C2ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFFE12C6F461B001C2ED9 /* AppDelegate.swift */; };
 		EDAAFFE42C6F461B001C2ED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFFE32C6F461B001C2ED9 /* SceneDelegate.swift */; };
 		EDAAFFE62C6F461B001C2ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFFE52C6F461B001C2ED9 /* ViewController.swift */; };
@@ -45,6 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED39369B2C7208AE00075510 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		ED39369E2C720A7300075510 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		ED3936A12C720B8900075510 /* PayloadDTO+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PayloadDTO+Mocks.swift"; sourceTree = "<group>"; };
+		ED3936A52C7211DD00075510 /* WhenFetchingPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhenFetchingPayload.swift; sourceTree = "<group>"; };
 		EDAA00012C6F461E001C2ED9 /* st-louis-post-dispatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "st-louis-post-dispatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITests.swift; sourceTree = "<group>"; };
 		EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -56,6 +73,15 @@
 		EDAA00222C6F659B001C2ED9 /* payloadMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payloadMock.json; sourceTree = "<group>"; };
 		EDAA00242C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PayloadMessage+Mocks.swift"; sourceTree = "<group>"; };
 		EDAA00262C6F6896001C2ED9 /* MockHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpClient.swift; sourceTree = "<group>"; };
+		EDAA002D2C7150D1001C2ED9 /* PayloadDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadDTO.swift; sourceTree = "<group>"; };
+		EDAA00322C71547F001C2ED9 /* PayloadRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadRepository.swift; sourceTree = "<group>"; };
+		EDAA00352C715630001C2ED9 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		EDAA00392C71593E001C2ED9 /* Payload+Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Payload+Persistence.swift"; sourceTree = "<group>"; };
+		EDAA003B2C715D3F001C2ED9 /* RecordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDTO.swift; sourceTree = "<group>"; };
+		EDAA003D2C715F71001C2ED9 /* SubscriptionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDTO.swift; sourceTree = "<group>"; };
+		EDAA003F2C7161BF001C2ED9 /* OfferDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDTO.swift; sourceTree = "<group>"; };
+		EDAA00412C71632D001C2ED9 /* PersistenceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceConstants.swift; sourceTree = "<group>"; };
+		EDAA00432C7173BE001C2ED9 /* Payload+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Payload+API.swift"; sourceTree = "<group>"; };
 		EDAAFFDE2C6F461B001C2ED9 /* st-louis-post-dispatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "st-louis-post-dispatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAAFFE12C6F461B001C2ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDAAFFE32C6F461B001C2ED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +120,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED39369D2C720A4600075510 /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				ED39369E2C720A7300075510 /* PersistenceTests.swift */,
+			);
+			path = persistence;
+			sourceTree = "<group>";
+		};
+		ED3936A02C720B7300075510 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3936A12C720B8900075510 /* PayloadDTO+Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		ED3936A32C720D7200075510 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA002D2C7150D1001C2ED9 /* PayloadDTO.swift */,
+				EDAA003B2C715D3F001C2ED9 /* RecordDTO.swift */,
+				EDAA003D2C715F71001C2ED9 /* SubscriptionDTO.swift */,
+				EDAA003F2C7161BF001C2ED9 /* OfferDTO.swift */,
+				EDAA00392C71593E001C2ED9 /* Payload+Persistence.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		ED3936A42C7211B300075510 /* integration */ = {
+			isa = PBXGroup;
+			children = (
+				ED3936A52C7211DD00075510 /* WhenFetchingPayload.swift */,
+			);
+			path = integration;
+			sourceTree = "<group>";
+		};
 		EDAA00042C6F461E001C2ED9 /* st-louis-post-dispatchUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +189,7 @@
 				EDAA001A2C6F4F92001C2ED9 /* ApiHelper.swift */,
 				EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */,
 				EDAA001F2C6F6245001C2ED9 /* ApiService.swift */,
+				EDAA00432C7173BE001C2ED9 /* Payload+API.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -138,6 +201,34 @@
 				EDAA00242C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EDAA002C2C7150A8001C2ED9 /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				ED39369B2C7208AE00075510 /* PersistenceManager.swift */,
+				EDAA00412C71632D001C2ED9 /* PersistenceConstants.swift */,
+				ED3936A32C720D7200075510 /* DTO */,
+				ED3936A02C720B7300075510 /* Mocks */,
+			);
+			path = persistence;
+			sourceTree = "<group>";
+		};
+		EDAA00312C715464001C2ED9 /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA00322C71547F001C2ED9 /* PayloadRepository.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		EDAA00342C71561C001C2ED9 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA00312C715464001C2ED9 /* repositories */,
+				EDAA00352C715630001C2ED9 /* Payload.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		EDAAFFD52C6F461B001C2ED9 = {
@@ -163,6 +254,8 @@
 		EDAAFFE02C6F461B001C2ED9 /* st-louis-post-dispatch */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA00342C71561C001C2ED9 /* models */,
+				EDAA002C2C7150A8001C2ED9 /* persistence */,
 				EDAA001C2C6F5F07001C2ED9 /* api */,
 				EDAA00142C6F4E78001C2ED9 /* rest */,
 				EDAAFFE12C6F461B001C2ED9 /* AppDelegate.swift */,
@@ -180,6 +273,8 @@
 		EDAAFFFA2C6F461E001C2ED9 /* st-louis-post-dispatchTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED3936A42C7211B300075510 /* integration */,
+				ED39369D2C720A4600075510 /* persistence */,
 				EDAA00172C6F4EF2001C2ED9 /* rest */,
 				EDAAFFFB2C6F461E001C2ED9 /* st_louis_post_dispatchTests.swift */,
 			);
@@ -321,12 +416,23 @@
 				EDAA00252C6F65DF001C2ED9 /* PayloadMessage+Mocks.swift in Sources */,
 				EDAA00272C6F6896001C2ED9 /* MockHttpClient.swift in Sources */,
 				EDAA001E2C6F5F79001C2ED9 /* PayloadMessage.swift in Sources */,
+				EDAA00362C715630001C2ED9 /* Payload.swift in Sources */,
+				EDAA002E2C7150D1001C2ED9 /* PayloadDTO.swift in Sources */,
+				EDAA00422C71632D001C2ED9 /* PersistenceConstants.swift in Sources */,
 				EDAA001B2C6F4F92001C2ED9 /* ApiHelper.swift in Sources */,
 				EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */,
 				EDAAFFE62C6F461B001C2ED9 /* ViewController.swift in Sources */,
+				EDAA00442C7173BE001C2ED9 /* Payload+API.swift in Sources */,
+				EDAA00332C71547F001C2ED9 /* PayloadRepository.swift in Sources */,
+				ED39369C2C7208AE00075510 /* PersistenceManager.swift in Sources */,
 				EDAAFFEC2C6F461B001C2ED9 /* st_louis_post_dispatch.xcdatamodeld in Sources */,
+				EDAA003E2C715F71001C2ED9 /* SubscriptionDTO.swift in Sources */,
+				EDAA003C2C715D3F001C2ED9 /* RecordDTO.swift in Sources */,
 				EDAAFFE22C6F461B001C2ED9 /* AppDelegate.swift in Sources */,
 				EDAA00202C6F6245001C2ED9 /* ApiService.swift in Sources */,
+				ED3936A22C720B8900075510 /* PayloadDTO+Mocks.swift in Sources */,
+				EDAA00402C7161BF001C2ED9 /* OfferDTO.swift in Sources */,
+				EDAA003A2C71593E001C2ED9 /* Payload+Persistence.swift in Sources */,
 				EDAAFFE42C6F461B001C2ED9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +441,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3936A62C7211DD00075510 /* WhenFetchingPayload.swift in Sources */,
+				ED39369F2C720A7300075510 /* PersistenceTests.swift in Sources */,
 				EDAA00192C6F4F13001C2ED9 /* ApiTests.swift in Sources */,
 				EDAAFFFC2C6F461E001C2ED9 /* st_louis_post_dispatchTests.swift in Sources */,
 			);

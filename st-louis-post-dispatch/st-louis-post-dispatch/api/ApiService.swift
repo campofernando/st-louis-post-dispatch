@@ -14,7 +14,7 @@ struct ApiService {
         self.client = client
     }
     
-    func getPayload() async throws -> PayloadMessage {
+    func getPayload() async throws -> Payload {
         let response = try await client.performRequest(url: ApiHelper.getPayloadUrl())
         return try PayloadMapper.map(response: response)
     }
