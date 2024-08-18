@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct MockHttpClient: HttpClient {
-    func performRequest(url: URL?) async throws -> HttpClientResponse {
+struct MockHttpClient: HttpClient {func performRequest(url: URL?) async throws -> HttpClientResponse {
         return try ApiHelper.getMockedHttpResponse(url: url)
+    }
+    
+    func downloadFile(fromUrl url: URL?) async throws -> URL {
+        return try FileHelper.getMockLocalUrl()
     }
 }

@@ -17,11 +17,14 @@ enum NetworkError: Error {
 
 protocol HttpClient {
     func performRequest(url: URL?) async throws -> HttpClientResponse
+    func downloadFile(fromUrl url: URL?) async throws -> URL
 }
 
 extension URLSession: HttpClient {
     struct InvalidURLRequestError: Error { }
     struct InvalidHttpResponseError: Error { }
+    struct URLSessionDownloadError: Error { }
+    struct InvalidFileLocationError: Error { }
     
     func performRequest(url: URL?) async throws -> HttpClientResponse {
         guard let url else {
@@ -44,6 +47,43 @@ extension URLSession: HttpClient {
             throw NetworkError.badRequest
         default:
             throw NetworkError.unknown
+        }
+    }
+    
+    func downloadFile(fromUrl url: URL?) async throws -> URL {
+        guard let url else {
+            throw(InvalidURLRequestError())
+        }
+        
+        return try await withCheckedThrowingContinuation { continuation in
+            downloadTask(with: url) { location, _, error in
+                if let error {
+                    continuation.resume(with: .failure(error))
+                    return
+                }
+                guard let location else {
+                    continuation.resume(with: .failure(URLSessionDownloadError()))
+                    return
+                }
+                
+                let localPath = FileHelper.getLocalPath(url: url)
+                guard let localPath else {
+                    continuation.resume(with: .failure(InvalidFileLocationError()))
+                    return
+                }
+                
+                let relativePath = localPath.relativePath
+                do {
+                    if FileManager.default.fileExists(atPath: relativePath) {
+                        try FileManager.default.removeItem(atPath: relativePath)
+                    }
+                    try FileManager.default.moveItem(at: location, to: localPath)
+                    continuation.resume(with: .success(localPath))
+                } catch {
+                    continuation.resume(with: .failure(error))
+                }
+            }
+            .resume()
         }
     }
 }

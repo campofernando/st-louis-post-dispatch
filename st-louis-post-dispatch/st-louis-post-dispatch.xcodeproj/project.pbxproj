@@ -11,11 +11,12 @@
 		ED39369F2C720A7300075510 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39369E2C720A7300075510 /* PersistenceTests.swift */; };
 		ED3936A22C720B8900075510 /* PayloadDTO+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936A12C720B8900075510 /* PayloadDTO+Mocks.swift */; };
 		ED3936A62C7211DD00075510 /* WhenFetchingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936A52C7211DD00075510 /* WhenFetchingPayload.swift */; };
+		ED3936A92C72223300075510 /* FileDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936A82C72223300075510 /* FileDownloadManager.swift */; };
+		ED3936AB2C7227E100075510 /* FileDownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936AA2C7227E100075510 /* FileDownloadTests.swift */; };
 		EDAA00062C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */; };
 		EDAA00082C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */; };
 		EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */; };
 		EDAA00192C6F4F13001C2ED9 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00182C6F4F13001C2ED9 /* ApiTests.swift */; };
-		EDAA001B2C6F4F92001C2ED9 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA001A2C6F4F92001C2ED9 /* ApiHelper.swift */; };
 		EDAA001E2C6F5F79001C2ED9 /* PayloadMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */; };
 		EDAA00202C6F6245001C2ED9 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA001F2C6F6245001C2ED9 /* ApiService.swift */; };
 		EDAA00232C6F659B001C2ED9 /* payloadMock.json in Resources */ = {isa = PBXBuildFile; fileRef = EDAA00222C6F659B001C2ED9 /* payloadMock.json */; };
@@ -62,12 +63,13 @@
 		ED39369E2C720A7300075510 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
 		ED3936A12C720B8900075510 /* PayloadDTO+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PayloadDTO+Mocks.swift"; sourceTree = "<group>"; };
 		ED3936A52C7211DD00075510 /* WhenFetchingPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhenFetchingPayload.swift; sourceTree = "<group>"; };
+		ED3936A82C72223300075510 /* FileDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadManager.swift; sourceTree = "<group>"; };
+		ED3936AA2C7227E100075510 /* FileDownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadTests.swift; sourceTree = "<group>"; };
 		EDAA00012C6F461E001C2ED9 /* st-louis-post-dispatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "st-louis-post-dispatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITests.swift; sourceTree = "<group>"; };
 		EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		EDAA00182C6F4F13001C2ED9 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
-		EDAA001A2C6F4F92001C2ED9 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadMessage.swift; sourceTree = "<group>"; };
 		EDAA001F2C6F6245001C2ED9 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		EDAA00222C6F659B001C2ED9 /* payloadMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payloadMock.json; sourceTree = "<group>"; };
@@ -156,6 +158,15 @@
 			path = integration;
 			sourceTree = "<group>";
 		};
+		ED3936A72C721B9A00075510 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */,
+				EDAA00432C7173BE001C2ED9 /* Payload+API.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		EDAA00042C6F461E001C2ED9 /* st-louis-post-dispatchUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +181,7 @@
 			children = (
 				EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */,
 				EDAA00262C6F6896001C2ED9 /* MockHttpClient.swift */,
+				ED3936A82C72223300075510 /* FileDownloadManager.swift */,
 			);
 			path = rest;
 			sourceTree = "<group>";
@@ -178,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				EDAA00182C6F4F13001C2ED9 /* ApiTests.swift */,
+				ED3936AA2C7227E100075510 /* FileDownloadTests.swift */,
 			);
 			path = rest;
 			sourceTree = "<group>";
@@ -185,11 +198,9 @@
 		EDAA001C2C6F5F07001C2ED9 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				ED3936A72C721B9A00075510 /* Message */,
 				EDAA00212C6F6505001C2ED9 /* Mocks */,
-				EDAA001A2C6F4F92001C2ED9 /* ApiHelper.swift */,
-				EDAA001D2C6F5F79001C2ED9 /* PayloadMessage.swift */,
 				EDAA001F2C6F6245001C2ED9 /* ApiService.swift */,
-				EDAA00432C7173BE001C2ED9 /* Payload+API.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -419,7 +430,6 @@
 				EDAA00362C715630001C2ED9 /* Payload.swift in Sources */,
 				EDAA002E2C7150D1001C2ED9 /* PayloadDTO.swift in Sources */,
 				EDAA00422C71632D001C2ED9 /* PersistenceConstants.swift in Sources */,
-				EDAA001B2C6F4F92001C2ED9 /* ApiHelper.swift in Sources */,
 				EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */,
 				EDAAFFE62C6F461B001C2ED9 /* ViewController.swift in Sources */,
 				EDAA00442C7173BE001C2ED9 /* Payload+API.swift in Sources */,
@@ -434,6 +444,7 @@
 				EDAA00402C7161BF001C2ED9 /* OfferDTO.swift in Sources */,
 				EDAA003A2C71593E001C2ED9 /* Payload+Persistence.swift in Sources */,
 				EDAAFFE42C6F461B001C2ED9 /* SceneDelegate.swift in Sources */,
+				ED3936A92C72223300075510 /* FileDownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +456,7 @@
 				ED39369F2C720A7300075510 /* PersistenceTests.swift in Sources */,
 				EDAA00192C6F4F13001C2ED9 /* ApiTests.swift in Sources */,
 				EDAAFFFC2C6F461E001C2ED9 /* st_louis_post_dispatchTests.swift in Sources */,
+				ED3936AB2C7227E100075510 /* FileDownloadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
