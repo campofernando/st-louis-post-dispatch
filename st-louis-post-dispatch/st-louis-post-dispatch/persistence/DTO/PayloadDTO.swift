@@ -15,6 +15,11 @@ extension PayloadDTO {
         return try context.fetch(request).first
     }
     
+    static func currentPayload(context: NSManagedObjectContext) throws -> PayloadDTO? {
+        let request = NSFetchRequest<PayloadDTO>(entityName: "PayloadDTO")
+        return try context.fetch(request).first
+    }
+    
     var payloadId: String {
         get {
             id_ ?? UUID().uuidString

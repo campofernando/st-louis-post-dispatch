@@ -13,6 +13,9 @@
 		ED3936A62C7211DD00075510 /* WhenFetchingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936A52C7211DD00075510 /* WhenFetchingPayload.swift */; };
 		ED3936A92C72223300075510 /* FileDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936A82C72223300075510 /* FileDownloadManager.swift */; };
 		ED3936AB2C7227E100075510 /* FileDownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936AA2C7227E100075510 /* FileDownloadTests.swift */; };
+		ED3936B32C72379C00075510 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936B12C72379C00075510 /* ViewModel.swift */; };
+		ED3936B42C72379C00075510 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936B22C72379C00075510 /* View.swift */; };
+		ED3936B62C725C3500075510 /* AppDependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3936B52C725C3500075510 /* AppDependencyFactory.swift */; };
 		EDAA00062C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */; };
 		EDAA00082C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */; };
 		EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA00152C6F4E91001C2ED9 /* HttpClient.swift */; };
@@ -65,6 +68,9 @@
 		ED3936A52C7211DD00075510 /* WhenFetchingPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhenFetchingPayload.swift; sourceTree = "<group>"; };
 		ED3936A82C72223300075510 /* FileDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadManager.swift; sourceTree = "<group>"; };
 		ED3936AA2C7227E100075510 /* FileDownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadTests.swift; sourceTree = "<group>"; };
+		ED3936B12C72379C00075510 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		ED3936B22C72379C00075510 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		ED3936B52C725C3500075510 /* AppDependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyFactory.swift; sourceTree = "<group>"; };
 		EDAA00012C6F461E001C2ED9 /* st-louis-post-dispatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "st-louis-post-dispatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAA00052C6F461E001C2ED9 /* st_louis_post_dispatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITests.swift; sourceTree = "<group>"; };
 		EDAA00072C6F461E001C2ED9 /* st_louis_post_dispatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = st_louis_post_dispatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -165,6 +171,16 @@
 				EDAA00432C7173BE001C2ED9 /* Payload+API.swift */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		ED3936AC2C72373C00075510 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ED3936B22C72379C00075510 /* View.swift */,
+				ED3936B12C72379C00075510 /* ViewModel.swift */,
+				EDAAFFE52C6F461B001C2ED9 /* ViewController.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		EDAA00042C6F461E001C2ED9 /* st-louis-post-dispatchUITests */ = {
@@ -269,9 +285,10 @@
 				EDAA002C2C7150A8001C2ED9 /* persistence */,
 				EDAA001C2C6F5F07001C2ED9 /* api */,
 				EDAA00142C6F4E78001C2ED9 /* rest */,
+				ED3936AC2C72373C00075510 /* view */,
 				EDAAFFE12C6F461B001C2ED9 /* AppDelegate.swift */,
+				ED3936B52C725C3500075510 /* AppDependencyFactory.swift */,
 				EDAAFFE32C6F461B001C2ED9 /* SceneDelegate.swift */,
-				EDAAFFE52C6F461B001C2ED9 /* ViewController.swift */,
 				EDAAFFE72C6F461B001C2ED9 /* Main.storyboard */,
 				EDAAFFED2C6F461E001C2ED9 /* Assets.xcassets */,
 				EDAAFFEF2C6F461E001C2ED9 /* LaunchScreen.storyboard */,
@@ -429,6 +446,7 @@
 				EDAA001E2C6F5F79001C2ED9 /* PayloadMessage.swift in Sources */,
 				EDAA00362C715630001C2ED9 /* Payload.swift in Sources */,
 				EDAA002E2C7150D1001C2ED9 /* PayloadDTO.swift in Sources */,
+				ED3936B62C725C3500075510 /* AppDependencyFactory.swift in Sources */,
 				EDAA00422C71632D001C2ED9 /* PersistenceConstants.swift in Sources */,
 				EDAA00162C6F4E91001C2ED9 /* HttpClient.swift in Sources */,
 				EDAAFFE62C6F461B001C2ED9 /* ViewController.swift in Sources */,
@@ -444,6 +462,8 @@
 				EDAA00402C7161BF001C2ED9 /* OfferDTO.swift in Sources */,
 				EDAA003A2C71593E001C2ED9 /* Payload+Persistence.swift in Sources */,
 				EDAAFFE42C6F461B001C2ED9 /* SceneDelegate.swift in Sources */,
+				ED3936B42C72379C00075510 /* View.swift in Sources */,
+				ED3936B32C72379C00075510 /* ViewModel.swift in Sources */,
 				ED3936A92C72223300075510 /* FileDownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

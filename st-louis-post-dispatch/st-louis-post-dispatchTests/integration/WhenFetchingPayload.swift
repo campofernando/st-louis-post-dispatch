@@ -33,7 +33,7 @@ final class WhenFetchingPayload: XCTestCase {
         let context = persistenceManager.container.viewContext
         let payloadId = "66be196bad19ca34f896843d"
         do {
-            try await payloadRepository.getPayload(withId: payloadId)
+            try await payloadRepository.getPayload()
             
             guard let payload = try PayloadDTO.withId(payloadId, context: context) else {
                 XCTFail("Object not in the database")

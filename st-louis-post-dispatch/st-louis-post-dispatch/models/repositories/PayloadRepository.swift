@@ -18,8 +18,8 @@ struct PayloadRepository {
     }
     
     @discardableResult
-    func getPayload(withId id: String) async throws -> Payload {
-        if let payload = try PayloadDTO.withId(id, context: context) {
+    func getPayload() async throws -> Payload {
+        if let payload = try PayloadDTO.currentPayload(context: context) {
             return Payload(managedObject: payload)
         }
         let fetchedPayload = try await apiService.getPayload()

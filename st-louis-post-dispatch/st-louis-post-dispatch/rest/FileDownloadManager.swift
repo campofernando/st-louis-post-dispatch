@@ -25,7 +25,7 @@ enum FileHelper {
     }
 }
 
-struct FileDownloadManager {
+actor FileDownloadManager {
     private let client: HttpClient
     
     init(client: HttpClient) {
@@ -34,6 +34,10 @@ struct FileDownloadManager {
     
     func downloadFile(from path: String) async throws -> String {
         let url = URL(string: path)
+        return try await downloadFile(from: url)
+    }
+    
+    func downloadFile(from url: URL?) async throws -> String {
         let location = try await client.downloadFile(fromUrl: url)
         return location.relativePath
     }

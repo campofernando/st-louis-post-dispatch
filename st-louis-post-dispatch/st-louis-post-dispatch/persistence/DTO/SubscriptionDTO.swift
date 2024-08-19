@@ -44,7 +44,7 @@ extension SubscriptionDTO {
     
     var subscribeSubtitle: String {
         get {
-            subscribeTitle_ ?? PersistenceConstants.notFoundString
+            subscribeSubtitle_ ?? PersistenceConstants.notFoundString
         }
         set {
             subscribeSubtitle_ = newValue
